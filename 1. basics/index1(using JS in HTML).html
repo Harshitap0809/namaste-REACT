@@ -1,0 +1,26 @@
+<!-- 1. Basic hello world program using JS inside HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste REACT</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // Create an <h1> element using JavaScript
+      const heading = document.createElement("h1");
+
+      // Add text inside the <h1>
+      heading.innerHTML = "Hello World from JS";
+
+      // Select the <div> with id="root"
+      const root = document.getElementById("root");
+
+      // Attach the <h1> to the <div>, so it appears on the page
+      root.appendChild(heading);
+    </script>
+  </body>
+</html>

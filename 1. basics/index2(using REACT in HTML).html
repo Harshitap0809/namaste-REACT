@@ -1,0 +1,35 @@
+<!-- 1. Basic hello world program using REACT inside HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste REACT</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      // Create an <h1> element using REACT
+      const heading = React.createElement("h1", null, "Hello World from REACT");
+
+      // Select the <div> with id="root"
+      const root = document.getElementById("root");
+
+      // Create a React root and render the heading inside the <div>
+      const reactRoot = ReactDOM.createRoot(root);
+
+      // Attach the <h1> to the <div>, so it appears on the page
+      reactRoot.render(heading);
+    </script>
+  </body>
+</html>
